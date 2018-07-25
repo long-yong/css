@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    
+    <style>
+        .p1 {
+            background-color: grey;
+            padding: 10px;
+        }
+
+        .p2 {
+            background-color: darkgrey;
+            padding: 10px;
+        }
+
+        .sm {
+            display: none;
+        }
+
+        .med {
+            display: none;
+        }
+
+        .lg {
+            display: none;
+        }
+
+        @media only screen and (max-width:480px) {
+            .sm {
+                background-color: yellow;
+                display: block;
+                padding: 10px;
+            }
+        }
+
+        @media only screen and (min-width:481px) and (max-width:1023px) {
+            .med {
+                background-color: blue;
+                display: block;
+                padding: 10px;
+            }
+        }
+
+        @media only screen and (min-width:1024px) {
+            .lg {
+                background-color: red;
+                display: block;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <p class="p1">@media queries</p>
+        </div>
+
+        <div>
+            <p class="p2">The rest of the video is actually pretty damn good and pretty damn illuminating—I recommend watching it all.
+                That part in particular, though, shows who the true star of the World Cup was. And he’s not even old enough
+                to buy cigarettes in New York. </p>
+        </div>
+
+        <div class="sm">Phone: Width less than or equal to 480px</div>
+        <div class="med">Tablet: Width between 481px and 1023px</div>
+        <div class="lg">Desktop: Width greater than or equal to 1024px</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Position Practice</title>
+
+	<style>
+		* {
+			margin: 5px;
+			padding: 5px;
+			vertical-align: top;
+		}
+
+		#wrapper {
+			width: 950px;
+			background-color: silver;
+			margin: 0px auto;
+		}
+
+		#header {
+			min-height: 150px;
+			background-color: green;
+		}
+
+		#navigation {
+			min-height: 300px;
+			width: 200px;
+			background-color: blue;
+			display: inline-block;
+		}
+
+		#main_content {
+			top: 0px;
+			min-height: 400px;
+			width: 700px;
+			background-color: red;
+			display: inline-block;
+		}
+
+		.subcontents {
+			min-height: 200px;
+			width: 210px;
+			background-color: yellow;
+			display: inline-block;
+		}
+
+		#advertisement {
+			margin-top: 15px;
+			min-height: 120px;
+			width: 680px;
+			background-color: purple;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		<div id="header"></div>
+		<div id="navigation"></div>
+		<div id="main_content">
+			<div class="subcontents"></div>
+			<div class="subcontents"></div>
+			<div class="subcontents"></div>
+			<div id="advertisement"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>

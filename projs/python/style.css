@@ -1,0 +1,184 @@
+    
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* text-decoration: none; */
+	vertical-align: top;
+	color:white;
+}
+
+#container {
+	width: 970px;
+	background-color: black;
+}
+
+.clear {
+	clear: both;
+}
+
+#header {
+	width: 970px;
+	height:120px;
+	background-color: rgb(38,81,117);
+}
+
+#header img {
+	width:400px;
+	height:90px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+#header .rightside {
+	background-color: rgb(38,81,117);
+	width:260px;
+	height:100px;
+	margin-left:305px;
+	margin-top:10px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: right;
+}
+
+.rightside a {
+	color:yellow;
+}
+
+#header .blackbox {
+	background-color: rgb(68,68,68);
+	width:250px;
+	height:40px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: left;
+	border-top-left-radius: 8px; 
+	border-bottom-left-radius: 8px;
+}
+
+.blackbox textarea {
+	width:150px;
+	height: 25px;
+	margin-left:30px;
+	margin-top:7px;	
+	display: inline-block;
+	color:black;
+}
+
+.blackbox button {
+	width:40px;
+	height: 25px;
+	margin-top:7px;	
+	background-color:rgb(38,81,117);
+}
+
+#main-1 {
+	background-color: rgb(38,81,117);
+	width: 910px;
+	height:40px;
+	padding-left:60px;
+	padding-top:10px;
+}
+
+.menubar {
+	width:800px;
+	height: 27px;
+	background-color: rgba(255,255,255,0.3);
+	padding-top:5px;
+}
+
+.menubar a {
+	font-size: 18px;
+	padding-left: 52px;
+}
+
+#main-2 {
+	background-color: rgb(38,81,117);
+	width: 970px;
+	height: 300px;
+	
+}
+
+#main-2 .docs {
+	background-color: rgb(38,81,117);
+	width:330px;
+	height:280px;
+	display: inline-block;
+	padding-top: 20px;
+	text-align: center;
+	line-height: 30px;
+	
+}
+
+#main-2 span{
+	color:yellow;
+	font-size: 8px;
+	display: inline;
+}
+
+#main-2 .intro {
+	background-color: rgb(38,81,117);
+	width:550px;
+	height:290px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	display: inline-block;
+
+}
+
+.poem {
+	font-size: 25px;
+	color: yellow;
+	font-style: italic;
+	line-height: 27px;
+}
+
+
+#main-3 {
+	width: 970px;
+	height: 270px;
+	background-color: white;
+}
+
+#main-3 .start {
+	width:430px;
+	height:230px;	
+	margin-top: 10px;
+	margin-left: 40px;
+	display: inline-block;
+	border-top: 4px solid black;
+}
+
+#main-3 p {
+	margin:10px;
+	color:black;
+}
+
+#main-3 .app {
+	width:430px;
+	height:230px;
+	margin-top: 10px;
+	margin-left: 20px;
+	display: inline-block;
+	border-top: 4px solid black;
+}
+
+#footer {
+	background-color: rgb(38,81,117);
+	width: 810px;
+	height:70px;
+	padding-top:25px;
+	padding-left:160px;
+}
+
+#footer a{
+	padding-left:60px;
+}
+
+#footer p{
+	padding-top:12px;
+	padding-left:180px;
+	display:block;
+}

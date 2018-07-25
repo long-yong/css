@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: green;
+    }
+
+    .book {
+      font-style: italic;
+    }
+
+    .col {
+      display: inline-block;
+      vertical-align: top;
+      padding: 20px;
+    }
+
+    .row {
+      border: 3px solid blue;
+    }
+
+    @media only screen and (max-width:480px) {
+      .sm-4 {
+        width: 100%;
+      }
+      .sm-0 {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width:481px) {
+      .med-2 {
+        width: 50%;
+      }
+    }
+
+    @media only screen and (min-width:1024px) {
+      .lg-1 {
+        width: 25%;
+      }
+      .lg-3 {
+        width: 75%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <button class="col sm-4 med-2 lg-1">Navidation button</button><!--
+      --><button class="col sm-4 med-2 lg-1">Navidation button</button><!--
+      --><button class="col sm-4 med-2 lg-1">Navidation button</button><!--
+      --><button class="col sm-4 med-2 lg-1">Navidation button</button>
+    </div>
+
+    <div class="row">
+      <div class="col sm-0 med-2 lg-1">
+        <h3>Extra information</h3>
+        <p>If you could fold a piece of paper 42 times, it would be tall enough to reach the moon.</p>
+      </div><!--
+      --><div class="col sm-4 med-2 lg-3">
+        <h3>Main content</h3>
+        <p>If you could fold a piece of paper 42 times, it would be tall enough to reach the moon. If you could fold a piece
+          of paper 42 times, it would be tall enough to reach the moon.If you could fold a piece of paper 42 times, it would
+          be tall enough to reach the moon.If you could fold a piece of paper 42 times, it would be tall enough to reach
+          the moon.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+* {
+	margin:0px;
+	padding:0px;
+	color:black;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+#container {
+	background-color: white;	
+	width: 1000px;
+	height: 1330px;
+}
+
+#header {
+	width: 1000px;
+	height: 50px;
+}
+
+#header .pic1{
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+#header .pic2{
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+#header .store-menu{
+	width:734px;
+	height:50px;
+	line-height: 50px;
+	font-size:20px;
+	display:inline-block;
+}
+
+#header a {
+	padding-left: 25px;
+}
+
+
+#header input {
+	width:150px;
+	height: 26px;
+	display:inline-block;
+	margin-top: 10px;
+}
+
+.mainpic {
+	width:1000px;
+	height: 400px;
+	margin-top:10px;
+}
+
+#accordmenu {
+	width:1000px;
+	height:50px;
+	line-height: 50px;
+	font-size:20px;
+	background-color: rgb(68,121,155);
+}
+
+#accordmenu a {
+	margin-left: 15px;
+	margin-right:30px;
+}
+
+#discover {
+	width:955px;
+	height:50px;
+	margin-left:25px;
+	margin-top:55px;	
+}
+
+#discover .text {
+	font-family: sans-serif;
+	font-size: 30px;
+	line-height: 50px;
+	display:inline-block;
+}
+
+#discover button {
+	background-color: rgb(68,121,155);
+	width:250px;
+	height:50px;
+	display:inline-block;
+	font-size: 20px;
+	border-radius: 10px;
+	margin-left:210px;
+}
+
+#main {
+	width:975px;
+	margin-top:30px;
+	margin-left:25px;
+}
+
+#main .box{
+	width:214px;
+	display: inline-block;
+	margin-right:25px;
+}
+
+#main .img1 {
+	width:40px;
+	height: 40px;
+	display: inline-block;
+}
+
+#main .h4 {
+	display: inline-block;
+	line-height: 40px;
+	font-size: 20px;
+	margin-left:10px;
+}
+
+#main .p {
+	font-size: 15px;
+	line-height: 25px;
+	margin:10px;
+}
+
+#main .img2 {
+	width:214px;
+	height: 160px;;
+}
+
+#main .btn {
+	width:214px;
+	height: 40px;
+	background-color: rgb(68,121,155);
+	border-radius: 8px;
+	margin-top: 15px;
+}
+
+#greybox {
+	width:940px;
+	height:40px;		
+	border: 1px solid grey;
+	margin-top: 25px;
+	margin-left:26px;	
+}
+
+#footmenu {
+	width:980px;
+	margin-top:25px;
+	margin-left:25px;
+	}
+
+#footmenu .box {	
+	width:133px;
+	height:180px;
+	margin-right:25px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+#footer {
+	width:600px;
+	height:35px;
+    font-size:16px;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+#footer a {
+	margin-right: 20px;
+}
+

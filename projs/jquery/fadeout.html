@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 
+        $('button.blue')  $('button, .blue') $('#red') 
+        $('#myParagraph').text("123");
+    -->
+
+    <script>       
+
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+                
+            $("button").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            }); 
+        });       
+
+    </script>
+</head>
+
+<body>
+
+    <p>Click me I will disappear.</p>
+
+    <button>Click me will fading follow boxes</button>
+    <br>
+    <br>
+    <div id="div1" style="width:30px;height:30px;background-color:red;"></div>
+    <br>
+    <div id="div2" style="width:30px;height:30px;background-color:green;"></div>
+    <br>
+    <div id="div3" style="width:30px;height:30px;background-color:blue;"></div>
+
+    <script>
+        var a = $('button').html()
+        console.log(a);
+    </script>
+
+</body>
+
+</html>

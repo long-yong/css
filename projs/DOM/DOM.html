@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello</title>
+</head>
+
+<body>
+  <h2> Hello! </h2>
+  <p>How are you</p>
+  <button>I am a button</button>
+
+  <script>
+
+    var bod = document.body;
+    for (var i = 0; i < 10; i++) {
+      bod.innerHTML += "<p>Click me: " + i + " times</p>";
+    }
+
+    var paragraphs = document.getElementsByTagName('p');
+    console.log(paragraphs);
+    for (var i = 0; i < paragraphs.length; i++) {
+      console.log(paragraphs[i].addEventListener);
+      paragraphs[i].addEventListener('click', function () {
+        this.style.background = 'blue';
+      });
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

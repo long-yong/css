@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        * {
+            vertical-align: top;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .green {
+            height: 50px;
+            width: 100%;
+            background-color: green;
+            display: block;
+        }
+
+        .blue {
+            height: 200px;
+            width: 32%;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        .red {
+            height: 440px;
+            width: 100%;
+            background-color: red;
+            display: block;
+        }
+
+        .yellow {
+            height:100px;
+            width:100%;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        .purple{
+            height:100px;
+            width:100%;
+            background-color: purple;
+            display: block;
+        }
+
+
+        @media only screen and (max-width:600px) {
+            .blue {
+                display: none;
+            }
+            .yellow {
+                width:97.5%;
+            }
+        }
+
+        @media only screen and (min-width:601px) and (max-width:900px) {
+            .blue {
+                display: none;
+            }
+            .yellow {
+                width:48%;
+            }
+            .purple {
+                width:48%;
+            }
+            .red {
+                height:330px;
+            }
+        }
+
+        @media only screen and (min-width:901px) {
+            .green {
+                width:98%;
+            }
+            .red {
+                width: 65%;
+                display: inline-block;
+            }
+            .yellow {
+                width:98.6%;
+            }
+            .purple {
+                width:98.6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="green"></div><!-- 
+        --><div class="blue"></div><!-- 
+         --><div class="red"><!-- 
+         --><div class="yellow"></div><!--
+        --><div class="yellow"></div><!--
+        --><div class="yellow"></div><!--
+        --><div class="purple"></div>
+         </div>
+    </div>
+
+</body>
+
+</html>

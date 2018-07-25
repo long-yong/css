@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+		<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>
+		Bootstrap Sample: Definition, Example	</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://www.statisticshowto.com/xmlrpc.php" />	
+
+<!-- This site is optimized with the Yoast SEO plugin v7.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="What is a bootstrap sample? Definition of bootstrapping in plain English. Notation, percentile method."/>
+<link rel="canonical" href="http://www.statisticshowto.com/bootstrap-sample/" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Statistics How To &raquo; Feed" href="http://www.statisticshowto.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Statistics How To &raquo; Comments Feed" href="http://www.statisticshowto.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Statistics How To &raquo; Bootstrap Sample: Definition, Example Comments Feed" href="http://www.statisticshowto.com/bootstrap-sample/feed/" />
+<meta property="fb:admins" content="1275422874"/>        
+<meta property="og:title" content="Bootstrap Sample: Definition, Example" />
+<meta property="og:description" content="------------------------------------------------------------------------------ Need help with a homework or test question? Chegg offers 30 minutes of free tutoring, so you can try them out before committing to a subscription. Click here for more details. If you prefer an online interactive environment to&hellip; "/>
+<meta property="og:url" content="http://www.statisticshowto.com/bootstrap-sample/"/>
+<meta property="og:image" content="http://www.statisticshowto.com/wp-content/uploads/2016/10/bootstrap-sample.png"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Statistics How To"/>
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.statisticshowto.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='cookie-consent-style-css'  href='http://www.statisticshowto.com/wp-content/plugins/uk-cookie-consent/assets/css/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='attitude_style-css'  href='http://www.statisticshowto.com/wp-content/themes/attitudechild/style.css?ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=PT+Sans%7CPhilosopher&#038;ver=4.9.7' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-content/themes/attitude/library/js/tinynav.js?ver=4.9.7'></script>
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-content/themes/attitude/library/js/backtotop.js?ver=4.9.7'></script>
+<link rel='https://api.w.org/' href='http://www.statisticshowto.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.statisticshowto.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.statisticshowto.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.statisticshowto.com/?p=32401' />
+<link rel="alternate" type="application/json+oembed" href="http://www.statisticshowto.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.statisticshowto.com%2Fbootstrap-sample%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.statisticshowto.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.statisticshowto.com%2Fbootstrap-sample%2F&#038;format=xml" />
+
+<!-- Bad Behavior 2.2.20 run time: 3.607 ms -->
+<script type="text/javascript">
+<!--
+function bb2_addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+
+bb2_addLoadEvent(function() {
+	for ( i=0; i < document.forms.length; i++ ) {
+		if (document.forms[i].method == 'post') {
+			var myElement = document.createElement('input');
+			myElement.setAttribute('type', 'hidden');
+			myElement.name = 'bb2_screener_';
+			myElement.value = '1532029022 185.93.228.8 88.98.217.141';
+			document.forms[i].appendChild(myElement);
+		}
+	}
+});
+// --></script>
+		<style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #ddd;
+					position: fixed;
+					left: 0;
+					top: 0;
+					width: 100%;
+					background-color: #464646;
+				}
+				#catapult-cookie-bar a {
+					color: #fff;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: ;
+				}
+				button#catapultCookie {
+					background:;
+					color: ;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #ddd;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style><!-- Statistics How To Custom CSS Styles -->
+<style type="text/css" media="screen">
+.hatom-extra {
+   font-style: italic;
+   margin-top: 10px;
+   padding-top: 10px;
+   border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+</style>
+<!-- Statistics How To Custom CSS Styles -->
+<style type="text/css" media="screen">
+body { background-image: none; }
+</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #1e73be; }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7347268288357903",
+          enable_page_level_ads: true
+     });
+</script>
+<link rel="icon" href="http://www.statisticshowto.com/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.statisticshowto.com/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="post-template-default single single-post postid-32401 single-format-standard custom-background ctcc-exclude-AF ctcc-exclude-AN ctcc-exclude-AS ctcc-exclude-NA ctcc-exclude-OC ctcc-exclude-SA ">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31285330-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+	<div class="wrapper">
+				<header id="branding" >
+				
+	<div class="container clearfix">
+		<div class="hgroup-wrap clearfix">
+								<section class="hgroup-right">
+													<form action="http://www.statisticshowto.com/" class="searchform clearfix" method="get">
+		<label class="assistive-text" for="s">Search</label>
+		<input type="text" placeholder="Search" class="s field" name="s">
+	</form><!-- .searchform -->
+					</section><!-- .hgroup-right -->	
+							<hgroup id="site-logo" class="clearfix">
+												<h1 id="site-title"> 
+								<a href="http://www.statisticshowto.com/" title="Statistics How To" rel="home">
+									Statistics How To								</a>
+							</h1>
+							<h2 id="site-description">Statistics for the rest of us!</h2>
+											
+				</hgroup><!-- #site-logo -->
+			
+		</div><!-- .hgroup-wrap -->
+	</div><!-- .container -->	
+					<img src="http://www.statisticshowto.com/wp-content/uploads/2015/02/cropped-banner-21.jpg" class="header-image" width="896" height="200" alt="Statistics How To">
+				
+	<nav id="access" class="clearfix">
+					<div class="container clearfix"><ul class="root"><li id="menu-item-7200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-7200"><a href="http://www.statisticshowto.com/">Home</a></li>
+<li id="menu-item-7203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7203"><a href="http://www.statisticshowto.com/tables/">Tables</a>
+<ul class="sub-menu">
+	<li id="menu-item-16365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16365"><a href="http://www.statisticshowto.com/tables/binomial-distribution-table/">Binomial Distribution Table</a></li>
+	<li id="menu-item-16367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16367"><a href="http://www.statisticshowto.com/tables/f-table/">F Table</a></li>
+	<li id="menu-item-16368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16368"><a href="http://www.statisticshowto.com/tables/ppmc-critical-values/">PPMC Critical Values</a></li>
+	<li id="menu-item-16369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16369"><a href="http://www.statisticshowto.com/tables/t-distribution-table/">T-Distribution Table (One Tail and Two-Tails)</a></li>
+	<li id="menu-item-16366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16366"><a href="http://www.statisticshowto.com/tables/chi-squared-table-right-tail/">Chi Squared Table (Right Tail)</a></li>
+	<li id="menu-item-16372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16372"><a href="http://www.statisticshowto.com/tables/z-table/">Z-table (Right of Curve or Left)</a></li>
+</ul>
+</li>
+<li id="menu-item-7208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7208"><a href="http://www.statisticshowto.com/probability-and-statistics/">Probability and Statistics</a>
+<ul class="sub-menu">
+	<li id="menu-item-41609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41609"><a href="http://www.statisticshowto.com/probability-and-statistics/binomial-theorem/">Binomials</a></li>
+	<li id="menu-item-41370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41370"><a href="http://www.statisticshowto.com/probability-and-statistics/chi-square/">Chi-Square Statistic</a></li>
+	<li id="menu-item-41366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41366"><a href="http://www.statisticshowto.com/probability-and-statistics/expected-value/">Expected Value</a></li>
+	<li id="menu-item-16339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16339"><a href="http://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/">Hypothesis Testing</a></li>
+	<li id="menu-item-16342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16342"><a href="http://www.statisticshowto.com/probability-and-statistics/non-normal-distributions/">Non Normal Distribution</a></li>
+	<li id="menu-item-16341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16341"><a href="http://www.statisticshowto.com/probability-and-statistics/normal-distributions/">Normal Distributions</a></li>
+	<li id="menu-item-16343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16343"><a href="http://www.statisticshowto.com/probability-and-statistics/probability-main-index/">Probability</a></li>
+	<li id="menu-item-16344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16344"><a href="http://www.statisticshowto.com/probability-and-statistics/regression-analysis/">Regression Analysis</a></li>
+	<li id="menu-item-16415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16415"><a href="http://www.statisticshowto.com/statistics-basics/">Statistics Basics</a></li>
+	<li id="menu-item-16345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16345"><a href="http://www.statisticshowto.com/probability-and-statistics/t-distribution/">T-Distribution</a></li>
+	<li id="menu-item-17885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17885"><a href="http://www.statisticshowto.com/probability-and-statistics/multivariate-analysis/">Multivariate Analysis</a></li>
+	<li id="menu-item-16340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16340"><a href="http://www.statisticshowto.com/probability-and-statistics/sampling-in-statistics/">Sampling</a></li>
+</ul>
+</li>
+<li id="menu-item-7202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7202"><a href="http://www.statisticshowto.com/calculators/">Calculators</a>
+<ul class="sub-menu">
+	<li id="menu-item-16334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16334"><a href="http://www.statisticshowto.com/calculators/variance-and-standard-deviation-calculator/">Variance and Standard Deviation Calculator</a></li>
+	<li id="menu-item-16333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16333"><a href="http://www.statisticshowto.com/calculators/tdist-calculator/">Tdist Calculator</a></li>
+	<li id="menu-item-16332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16332"><a href="http://www.statisticshowto.com/calculators/permutation-calculator-and-combination-calculator/">Permutation Calculator / Combination Calculator</a></li>
+	<li id="menu-item-16330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16330"><a href="http://www.statisticshowto.com/calculators/interquartile-range-calculator/">Interquartile Range Calculator</a></li>
+	<li id="menu-item-16331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16331"><a href="http://www.statisticshowto.com/calculators/linear-regression-calculator/">Linear Regression Calculator</a></li>
+	<li id="menu-item-16329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16329"><a href="http://www.statisticshowto.com/calculators/expected-value-calculator/">Expected Value Calculator</a></li>
+	<li id="menu-item-16328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16328"><a href="http://www.statisticshowto.com/calculators/binomial-distribution-calculator/">Binomial Distribution Calculator</a></li>
+</ul>
+</li>
+<li id="menu-item-7201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7201"><a href="http://www.statisticshowto.com/blog/">Statistics Blog</a></li>
+<li id="menu-item-16325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16325"><a href="http://www.statisticshowto.com/calculus/">Calculus</a>
+<ul class="sub-menu">
+	<li id="menu-item-41259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41259"><a href="http://www.statisticshowto.com/calculus/derivatives/">Derivatives</a></li>
+	<li id="menu-item-41247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41247"><a href="http://www.statisticshowto.com/calculus/integral-calculus/">Integrals</a></li>
+	<li id="menu-item-41248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41248"><a href="http://www.statisticshowto.com/calculus/limits-calculus/">Limits</a></li>
+</ul>
+</li>
+<li id="menu-item-24096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24096"><a href="http://www.statisticshowto.com/matrices-and-matrix-algebra/">Matrices</a></li>
+<li id="menu-item-40703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40703"><a href="http://www.statisticshowto.com/experimental-design/">Experimental Design</a></li>
+<li id="menu-item-16327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16327"><a href="http://www.statisticshowto.com/practically-cheating-statistics-handbook/">Practically Cheating Statistics Handbook</a></li>
+<li class="default-menu"><a href="http://www.statisticshowto.com" title="Navigation">Navigation</a></li></ul></div><!-- .container -->
+					</nav><!-- #access --> 		
+				</header>
+		
+				<div id="main" class="container clearfix">
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.statisticshowto.com%2Fbootstrap-sample%2F&amp;layout=standard&amp;show_faces=false&amp; width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:60px;">
+</iframe>
+
+<div id="container">
+	
+
+<div id="primary" class="no-margin-left">
+   <div id="content">	<section id="post-32401" class="post-32401 post type-post status-publish format-standard hentry category-statistics-how-to">
+		<article>
+
+			
+			<header class="entry-header">
+    			<h1 class="entry-title">
+    				Bootstrap Sample: Definition, Example    			</h1><!-- .entry-title -->
+  			</header>
+
+  			
+  			
+  			<div class="entry-content clearfix">
+    			<p><a href="http://www.statisticshowto.com/probability-and-statistics/sampling-in-statistics/">Sampling</a> &gt; Bootstrap Sample</p>
+<h2>What is a Bootstrap Sample?</h2>
+<p><a href="http://www.statisticshowto.com/wp-content/uploads/2016/10/bootstrap-sample.png"><img src="http://www.statisticshowto.com/wp-content/uploads/2016/10/bootstrap-sample.png" alt="bootstrap sample" width="595" height="288" class="alignleft size-full wp-image-32506" srcset="http://www.statisticshowto.com/wp-content/uploads/2016/10/bootstrap-sample.png 595w, http://www.statisticshowto.com/wp-content/uploads/2016/10/bootstrap-sample-300x145.png 300w" sizes="(max-width: 595px) 100vw, 595px" /></a><br />
+<br clear="left"><br />
+A <strong>bootstrap sample</strong> is a smaller sample that is &#8220;bootstrapped&#8221; from a larger sample. Bootstrapping is a type of <em>re</em>sampling where large numbers of smaller samples of the same size are repeatedly drawn, <a href="http://www.statisticshowto.com/sampling-with-replacement-without/">with replacement</a>, from a single original sample. </p>
+<p>For example, let&#8217;s say your sample was made up of ten numbers: 49, 34, 21, 18, 10, 8, 6, 5, 2, 1. You randomly draw three numbers 5, 1, and 49. You then replace those numbers into the sample and draw three numbers again. Repeat the process of drawing <em>x </em>numbers <em>B</em> times. Usually, original samples are much larger than this simple example, and B can reach into the thousands. After a large number of iterations, the bootstrap statistics are compiled into a<strong> bootstrap distribution. </strong>You&#8217;re replacing your numbers back into the pot, so your resamples can have the same item repeated several times (e.g. 49 could appear a dozen times in a dozen resamples). </p>
+<p>Bootstrapping is loosely based on the <a href="http://www.statisticshowto.com/law-large-numbers/" target="_blank">law of large numbers</a>, which states that if you sample over and over again, your data should approximate the true population data. This works, perhaps surprisingly, even when you&#8217;re using a single sample to generate the data.</p>
+<ul>
+<li>An <em>empirical</em> bootstrap sample is drawn from observations.</li>
+<li>A <em><a href="http://www.statisticshowto.com/parametric-statistics/">parametric </a></em>bootstrap sample is drawn from a parameterized distribution (e.g. a <a href="http://www.statisticshowto.com/probability-and-statistics/normal-distributions/">normal distribution</a>).</li>
+</ul>
+<h2>Why Resample?</h2>
+<p>Ideally, you would want to draw <strong>large, non-repeated, samples from a population</strong> in order to create a <a href="http://www.statisticshowto.com/sampling-distribution/">sampling distribution</a> for a statistic. However, you may be limited to one sample because of finances or time. This single sample  method can serve as a mini population, from which repeated small samples are drawn with replacement over and over again. As well as saving time and money, bootstrapped samples can be quite good approximations for <a href="http://www.statisticshowto.com/what-is-a-parameter-statisticshowto/" target="_blank">population parameters.</a></p>
+<h2>Running the Procedure</h2>
+<p>Bootstrapping is usually performed with software (e.g. <a href="http://www.stata.com/manuals13/rbootstrap.pdf" target="_blank">Stata</a> or with the <a href="https://cran.r-project.org/web/packages/bootstrap/bootstrap.pdf" target="_blank">R Bootstrap package</a>); The process generally follows three steps:</p>
+<ol>
+<li>Resample a data set <em>x</em> times,</li>
+<li>Find a summary statistic (called a <strong>bootstrap statistic</strong>) for each of the x samples,</li>
+<li>Estimate the <a href="http://www.statisticshowto.com/what-is-the-standard-error-of-a-sample/" target="_blank">standard error</a> for the bootstrap statistic using the <a href="http://www.statisticshowto.com/probability-and-statistics/standard-deviation/" target="_blank">standard deviation</a> of the bootstrap distribution.</li>
+</ol>
+<h2>Notation</h2>
+<ul>
+<li>The number of bootstrap samples can be indicated with B (e.g. if you resample 10 times then B = 10).</li>
+<li>A bootstrap sample is identified by &#8220;star&#8221; notation: x*<sub>1</sub>, x<sub>2*</sub>,&#8230;x*<sub>n</sub>. This is similar to the notation for sample data, which is traditionally denoted by: x<sub>1</sub>, x<sub>2</sub>,&#8230;x<sub>n</sub. The only difference is the star.</li>
+<li>A star next to a statistic, like s* or x&#772;* indicates the statistic was calculated by resampling. A bootstrap statistic is sometimes denoted with a T, where T*<sub>b</sub> would be the B<sup>th</sup> bootstrap sample statistic T.</li>
+</ul>
+<h2>Bootstrap Percentile Method</h2>
+<p>The <strong>bootstrap percentile method</strong> is a way to calculate <a href="http://www.statisticshowto.com/probability-and-statistics/confidence-interval/" target="_blank">confidence intervals </a>for bootstrapped samples. </p>
+<p>With the <strong>simple method,</strong> a certain percentage (e.g. 5% or 10%) is trimmed from the lower and upper end of the sample statistic (e.g. the mean or standard deviation). Which number you trim depends on the confidence interval you&#8217;re looking for. For example, a 90% confidence interval would generate a 100% &#8211; 90% = 10% trim (i.e. 5% from both ends). Or, put another (slightly more technical) way, you can get a 90% confidence interval by taking the lower bound 5% and upper bound 95% <a href="http://www.statisticshowto.com/quantile-definition-find-easy-steps/">quantiles </a>of the B replication T<sub>1</sub>, T<sub>2</sub>,&#8230;T<sub>B</sub>.</p>
+<p>A<strong> more complicated method</strong> is Efron&#8217;s BCa method (see DiCiccio and Efron, 1993), which stands for Bias-corrected and accelerated. As well as adjusting for bias, it also corrects <a href="http://www.statisticshowto.com/probability-and-statistics/skewed-distribution/">skewness </a>in the model.  Other variants include <a href="https://projecteuclid.org/euclid.aos/1176345338" target="_blank">Rubin&#8217;s Bayesian extension</a> and <a href="https://projecteuclid.org/euclid.ss/1032280214" target="_blank">DiCiccio and Efron&#8217;s ABC method</a>. </p>
+<p>This <strong>trimmed range</strong> for the statistic is the confidence interval for the population parameter of interest.</p>
+<p><strong>References:</strong><br />
+DiCiccio, T.J. and Efron B. (1996) Bootstrap confidence intervals. Statistical Science, 11, 189-228.<br />
+Efron, B. and Tibshirani, R. (1993) An Introduction to the Bootstrap. Chapman and Hall, New York, London.<br />
+Rubin, D (1981). The Bayesian bootstrap. Annals of Statistics 9 130–134.</p>
+------------------------------------------------------------------------------
+<p><strong>Need help with a homework or test question?</strong> <a href="http://chggtrx.com/click.track?CID=286409&AFID=423464&ADID=1873486&SID=
+  ">Chegg</a> offers 30 minutes of free tutoring, so you can try them out before committing to a subscription. <a href="http://chggtrx.com/click.track?CID=286409&AFID=423464&ADID=1873486&SID=
+  ">Click here for more details.</a>
+</p>
+<p>If you prefer an <strong>online interactive environment</strong> to learn R and statistics, this <a href="https://www.datacamp.com/courses/free-introduction-to-r?tap_a=5644-dce66f&tap_s=109699-3b32b3" target="_blank"><em>free R Tutorial by Datacamp</em></a> is a great way to get started. If you're are somewhat comfortable with R and are interested in going deeper into Statistics, try <a href="https://www.datacamp.com/tracks/statistics-with-r?tap_a=5644-dce66f&tap_s=109699-3b32b3" target="_blank"><em>this Statistics with R track</em></a>.
+</p>
+Comments? Need to post a correction? Please post on our <a href="https://www.facebook.com/statisticshowto/"><em>Facebook page</em></a>.
+<div class="hatom-extra"><span class="title">Bootstrap Sample: Definition, Example</span> was last modified: <span class="updated"> October 17th, 2017</span> by <span class="author vcard"><span class="fn">Stephanie</span></span></div>  			</div>
+  			<div class="entry-meta-bar clearfix">	        			
+    			<div class="entry-meta">
+    				<span class="by-author">By <a href="http://www.statisticshowto.com/author/andale/">Stephanie</a></span> |
+    				<span class="date"><a href="http://www.statisticshowto.com/bootstrap-sample/" title="7:49 am">November 3, 2016</a></span> |
+    				             		<span class="category"><a href="http://www.statisticshowto.com/category/statistics-how-to/" rel="category tag">Statistics How To</a></span> |
+             	 
+    				 		          				
+    			</div><!-- .entry-meta -->
+    		</div>
+
+  						<ul class="default-wp-page clearfix">
+				<li class="previous"><a href="http://www.statisticshowto.com/balanced-and-unbalanced-designs/" rel="prev"><span class="meta-nav">&larr;</span> Balanced and Unbalanced Designs: Definition, Examples</a></li>
+				<li class="next"><a href="http://www.statisticshowto.com/brier-score/" rel="next">Brier Score: Definition, Examples <span class="meta-nav">&rarr;</span></a></li>
+			</ul>
+		
+<div id="comments" class="comments-area">
+
+	
+	
+	
+</div><!-- #comments .comments-area -->
+		</article>
+	</section>
+</div><!-- #content --></div><!-- #primary -->
+
+
+<div id="secondary">
+	
+
+<aside id="search-3" class="widget widget_search"><h3 class="widget-title">Find an article</h3>	<form action="http://www.statisticshowto.com/" class="searchform clearfix" method="get">
+		<label class="assistive-text" for="s">Search</label>
+		<input type="text" placeholder="Search" class="s field" name="s">
+	</form><!-- .searchform -->
+</aside><aside id="text-5" class="widget widget_text">			<div class="textwidget"><a href="http://www.statisticshowto.com/practically-cheating-statistics-handbook/">
+   <img src="http://www.statisticshowto.com/wp-content/uploads/2015/08/Ebookreg.png" alt="" /><br>
+  <strong> Feel like "cheating" at Statistics? Check out the grade-increasing book that's recommended reading at top universities!</strong> 
+ </a>    
+</div>
+		</aside><aside id="text-14" class="widget widget_text">			<div class="textwidget"><p><a href="https://play.google.com/store/apps/details?id=com.goodbarber.statistics&#038;hl=en"><br />
+   <img src="http://www.statisticshowto.com/wp-content/uploads/2017/10/app.png" alt="" /><br />
+  <strong></strong><br />
+ </a>    </p>
+</div>
+		</aside><aside id="text-10" class="widget widget_text">			<div class="textwidget"><a href="http://www.statisticshowto.com/blog/privacy-policy/">Privacy policy.</a></div>
+		</aside>
+</div><!-- #secondary --></div><!-- #container -->
+
+
+	   </div><!-- #main -->
+
+	   
+	   	
+	   
+	   <footer id="colophon" class="clearfix">
+			
+
+
+<div id="site-generator">
+				<div class="container"><div class="copyright">Copyright &copy; 2018 <a href="http://www.statisticshowto.com/" title="Statistics How To" ><span>Statistics How To</span></a> Theme by: <a href="http://themehorse.com" target="_blank" title="Theme Horse" ><span>Theme Horse</span></a> Powered by: <a href="http://wordpress.org" target="_blank" title="WordPress"><span>WordPress</span></a> </div><!-- .copyright --><div style="clear:both;"></div>
+			</div><!-- .container -->
+			</div><!-- #site-generator --><div class="back-to-top"><a href="#branding">Back to Top</a></div>		</footer>
+	   
+			
+
+	</div><!-- .wrapper -->
+
+	 
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"","version":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-content/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js?ver=2.3.0'></script>
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-content/plugins/q2w3-fixed-widget/js/q2w3-fixed-widget.min.js?ver=5.1.4'></script>
+<script type='text/javascript' src='http://www.statisticshowto.com/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+			
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-top-bar");
+							$("html").addClass("cookie-bar-bar");
+															// Wait for the animation on the html to end before recalculating the required top margin
+								$("html").on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+									// code to execute after transition ends
+									var barHeight = $('#catapult-cookie-bar').outerHeight();
+									$("html").css("margin-top",barHeight);
+									$("body.admin-bar").css("margin-top",barHeight-32); // Push the body down if the admin bar is active
+								});
+													}
+																	});
+				</script>
+			
+			<div id="catapult-cookie-bar" class=""><div class="ctcc-inner "><span class="ctcc-left-side">We encourage you to view our updated policy on cookies and affiliates. <a class="ctcc-more-info-link" tabindex=0 target="_blank" href="http://www.statisticshowto.com/blog/privacy-policy/">Find out more.</a></span><span class="ctcc-right-side"><button id="catapultCookie" tabindex=0 onclick="catapultAcceptCookies();">Okay, thanks</button></span></div><!-- custom wrapper class --></div><!-- #catapult-cookie-bar -->
+</body>
+</html>
+<!-- *´¨)
+     ¸.•´¸.•*´¨) ¸.•*¨)
+     (¸.•´ (¸.•` ¤ Comet Cache is Fully Functional ¤ ´¨) -->
+
+<!-- Cache File Version Salt:       n/a -->
+
+<!-- Cache File URL:                http://www.statisticshowto.com/bootstrap-sample/ -->
+<!-- Cache File Path:               /cache/comet-cache/cache/http/www-statisticshowto-com/bootstrap-sample.html -->
+
+<!-- Cache File Generated Via:      HTTP request -->
+<!-- Cache File Generated On:       Jul 19th, 2018 @ 7:37 pm UTC -->
+<!-- Cache File Generated In:       0.39800 seconds -->
+
+<!-- Cache File Expires On:         Jul 26th, 2018 @ 7:37 pm UTC -->
+<!-- Cache File Auto-Rebuild On:    Jul 26th, 2018 @ 7:37 pm UTC -->
+
+<!-- Loaded via Cache On:    Jul 22nd, 2018 @ 9:31 pm UTC -->
+<!-- Loaded via Cache In:    0.00538 seconds -->

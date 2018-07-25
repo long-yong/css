@@ -1,0 +1,178 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	text-decoration: none;
+}
+
+#container {
+	width: 960px;
+	height: auto;
+	background-color: black;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+p.content {
+	margin: 0px 10px 0px 20px;
+	font-size: 10px;
+}
+
+/* for three buttons */
+
+
+.button {
+	width: 75px;
+	height: 18px;
+	margin-left: 97px;
+	margin-top: 11px;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: rgb(64, 125, 97);
+	border: solid 1px black;
+	font-size: 15px;
+	font-weight: bold;
+}       
+
+/* for header line */
+
+#box-1 {
+	width: 960px;
+	height: 90px;
+	background-color: rgba(255, 255, 255, 0.9);
+	float: left;
+}
+
+#box-11 {
+	width: 440px;
+	height: 50px;
+	padding-left: 20px;
+	padding-top: 20px;
+	border: 0px;
+	float: left;
+	font-size: 30px;
+	font-family: "Segoe Print", serif;
+	font-weight: bold;
+}
+
+#box-12 {
+	width: 420px;
+	height: 50px;
+	padding-left: 50px;
+	padding-top: 30px;
+	border: 0px;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* for introduce line */
+
+#box-2 {
+	width: 960px;
+	height: 300px;
+	background-color: rgb(111, 89, 100);
+	float: left;
+}
+
+#box-21 {
+	width: 435px;
+	height: 270px;
+	margin: 20px 15px 10px 30px;
+	background-color: grey;
+	float: left;
+}
+
+#box-22 {
+	width: 415px;
+	height: 250px;
+	margin: 20px 30px 10px 15px;
+	padding: 10px;
+	background-color: grey;
+	float: left;
+}
+
+/* for employer line */
+
+#box-3 {
+	width: 960px;
+	height: 500px;
+	background-color: rgb(111, 89, 100);
+	float: left;
+}
+
+#box-31 {
+	width: 280px;
+	height: 450px;
+	margin: 20px 15px 10px 30px;
+	background-color: white;
+	float: left;
+}
+
+#box-32 {
+	width: 280px;
+	height: 450px;
+	margin: 20px 15px 10px 15px;
+	background-color: white;
+	float: left;
+}
+
+#box-33 {
+	width: 280px;
+	height: 450px;
+	margin: 20px 15px 10px 15px;
+	background-color: white;
+	float: left;
+}
+
+.box-311 {
+	width: 265px;
+	height: 30px;
+	padding-left: 15px;
+	padding-top: 8px;
+	border: 0px;
+	background-color: rgb(171, 171, 171);
+	float: left;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.box-312 {
+	width: 280px;
+	height: 220px;
+	float: left;
+}
+
+.box-313 {
+	width: 265px;
+	height: 30px;
+	padding-left: 15px;
+	padding-top: 7px;
+	border: 0px;
+	background-color: rgb(171, 171, 171);
+	float: left;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.box-314 {
+	width: 280px;
+	background-color: white;
+	float: left;
+	float: left;
+}
+
+/* for contac info line */
+
+#box-4 {
+	width: 960px;
+	height: 75px;
+	background-color: rgba(255, 255, 255, 0.9);
+	float: left;
+	text-align: center;
+}

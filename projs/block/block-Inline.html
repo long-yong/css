@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Layouts</title>
+	<meta name="description" content="A really cool site!">
+	<link rel="stylesheet" type="text/css" href="css_3.css">
+	<style>
+
+		#container {
+			background-color: grey;
+			width: 660px;
+			overflow: hidden;
+			height: auto;
+		}
+
+		#box-1
+		 {
+			background-color: blue;
+			width: 640px;
+			height: 200px;			
+			border: 0px solid black;
+			margin: 10px;
+			padding: 0px;
+			float: left;
+		}
+
+		#box-2 {
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			border: 0px solid black;
+			margin: 10px;
+			padding: 0px;
+			float: left;
+		}
+
+		#box-3 {
+			background-color: green;
+			width: 310px;
+			height: 200px;
+			border: 0px solid black;
+			margin: 10px;
+			padding: 0px;
+			float: left;
+		}
+
+		#box-4 {
+			background-color: blue;
+			width: 640px;
+			height: 200px;
+			border: 0px solid black;
+			margin: 10px;
+			padding: 0px;
+			float: left;
+		}
+
+		#box-41 {
+			background-color: red;
+			position: absolute;
+			top:720px;
+			left:60px;
+			width: 100px;
+			height: 100px;
+			border: 0px solid black;
+			margin: 10px;
+			padding: 0px;
+		}
+
+		#box-42 {
+			background-color: red;
+			position: absolute;
+			top:720px;
+			left:490px;
+			width: 100px;
+			height: 100px;
+			border: 0px solid black;
+			margin: 10px;
+			padding: 0px;
+		}
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="box-1"></div>
+		<div class="clear"></div>
+
+		<div id="box-2"></div>
+		<div id="box-2"></div>
+		<div id="box-2"></div>
+		<div class="clear"></div>
+
+		<div id="box-3"></div>
+		<div id="box-3"></div>
+		<div class="clear"></div>
+		
+		<div id="box-4"></div>
+		<div id="box-41"></div>
+		<div id="box-42"></div>
+		<div class="clear"></div>	
+	</div>
+</body>
+
+</html>
