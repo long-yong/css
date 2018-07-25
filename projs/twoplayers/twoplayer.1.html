@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    
+            $(document).ready(function(){
+                
+                    var backgroundImg;
+                    var onClick =0;
+                    var player1Selected;
+                    // var player2Selected;
+
+                //Hover function
+                $('button').hover(function(){
+                    
+                    backgroundImg = $(this).val();
+                    
+                    $('.container').css("background-image", "url(img/"+backgroundImg+".jpg)" );
+                }, function(){
+                    if (onClick==0){
+                    $('.container').css("background-image","" );
+                    }
+                })
+                
+                //Click button
+                $('button').click(function(){
+                    onClick = 1;
+                    $('button').hide();
+
+                    $('.menu').html("<h1 class='h1player'>Select Player</h1><select id='list1'>"+
+                    "<option value=''></option>"+
+                    "<option value='donny.png'>Donny</option>"+
+                    "<option value='leo.png'>Leo</option>"+
+                    "<option value='mikey.png'>Mikey</option>"+
+                    "<option value='raphael.png'>Raphael</option>"+
+                    "</select>"+"<select id='list2'>"+
+                    "<option value=''></option>"+
+                    "<option value='donny.png'>Donny</option>"+
+                    "<option value='leo.png'>Leo</option>"+
+                    "<option value='mikey.png'>Mikey</option>"+
+                    "<option value='raphael.png'>Raphael</option>"+
+                    "</select>")
+          
+                })
+                
+                //Select Player 1
+       
+               $('.menu').on('change', '#list1', function(){
+                    player1Selected = $(this).val();
+                        if (player1Selected == ''){
+                            $('img').hide();
+                        }
+                        else    {
+                        $('.player1').html("<img src=img/"+player1Selected+" alt='#'>");
+                        $('img').css('width','100px');
+                        $('img').css('height', '100px');
+                        }
+                    });
+
+                //Select Player2
+                
+                $('.menu').on('change', '#list2', function(){
+                    player1Selected = $(this).val();
+                        if (player1Selected == ''){
+                            $('img').hide();
+                        }
+                        else    {
+                        $('.player2').html("<img src=img/"+player1Selected+" alt='#'>");
+                        $('img').css('width','100px');
+                        $('img').css('height', '100px');
+                        }
+                    });
+
+
+                //end 
+            })
+
+    </script>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            /* outline: 1px dotted black; */
+        }
+        .container {
+            margin: 0 auto;
+            background-color: black;
+            border: 10px solid grey;
+            width: 1000px;
+            height: 600px;
+        }
+        
+        .menu {
+            background: darkgrey;
+            height: 150px;
+            width: 300px;
+            margin-top: 200px;
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .menu button {
+            width: 120px;
+            height: 30px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .menu h1 {
+            text-align: center;
+        }
+        .h1player {
+            color: red;
+        }
+        #list1, #list2 {
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 120px;
+        }
+        .player1 {
+            /* background-color: green; */
+            width: 200px;
+            height: 100px;
+            margin-left: 130px;
+            margin-top: 50px;
+            padding-left: 50px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .player2 {
+            /* background-color: green; */
+            margin-left: 230px;
+            margin-top: 50px;
+            padding-left: 50px;
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Select Arena</h1>
+            <button value="beach">Beach</button>
+            <button value="earth">Planet</button>
+            <button value="dojo">Dojo</button>
+            <button value="forest">Forest</button>
+            <button value="matrix">Matrix</button>
+            <button value="snow">Snow</button>
+        </div>
+        <div class="player1"></div>
+        <div class="player2"></div>
+    </div>
+</body>
+</html>
