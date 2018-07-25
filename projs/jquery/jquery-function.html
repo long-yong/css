@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .box {
+      width: 600px;
+      border-bottom: 1px solid darkgrey;
+      padding: 15px;
+    }
+
+    button {
+      width: 20%;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    p {
+      display: inline-block;
+      padding-left: 25px;
+    }
+
+    .showobj {
+      display: none;
+    }
+
+    .slidedownobj {
+      display: none;
+    }
+
+    .fadeinobj {
+      display: none;
+    }
+
+    .redclass {
+      color: red;
+    }
+
+    .greenbox {
+      width: 40px;
+      height: 20px;
+      margin-left: 20px;
+      border: 1px solid green;
+      border-radius: 4px;
+    }
+
+    .valobj {
+      width: 80px;
+      height: 20px;
+      margin-left: 20px;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function () {
+
+      $(".hidebtn").click(function () {
+        $(".hideobj").hide();
+        $(".showobj").hide();
+      });
+      $(".showbtn").click(function () {
+        $(".hideobj").show();
+        $(".showobj").show();
+      });
+
+
+      $(".togglebtn").click(function () { $(".toggleobj").toggle(); });
+
+
+      $(".slidedownbtn").click(function () {
+        $(".slidedownobj").slideDown();
+        $(".slideupobj").slideDown();
+      });
+      $(".slideupbtn").click(function () {
+        $(".slidedownobj").slideUp();
+        $(".slideupobj").slideUp();
+      });
+
+
+      $(".slidetogglebtn").click(function () { $(".slidetoggleobj").slideToggle(); });
+
+
+      $(".fadeinbtn").click(function () {
+        $(".fadeoutobj").fadeIn();
+        $(".fadeinobj").fadeIn();
+      });
+      $(".fadeoutbtn").click(function () {
+        $(".fadeoutobj").fadeOut();
+        $(".fadeinobj").fadeOut();
+      });
+
+
+      $(".addclassbtn").click(function () { $(".addclassobj").addClass("redclass"); });
+
+
+      $(".beforebtn").click(function () { $(".beforeobj").before("<p>Hello!</p>"); });
+
+      $(".afterbtn").click(function () { $(".afterobj").after("<p>Bye!</p>"); });
+
+
+      $(".appendbtn").click(function () { $(".appendobj").append("<button>&nbsp;ok&nbsp;</button>"); });
+
+      $(".htmlbtn").click(function () { $(".htmlobj").html("Text changed!"); });
+
+      $(".attrbtn").click(function () {
+        $("img").attr("width", "100px");
+        $("img").attr("alt", "100x50");
+      });
+
+      $(".valbtn").click(function () {
+        str = $(".valobj").val();
+        if (str != "") $(".valbtn").text(str);
+      });
+
+      $(".textbtn").click(function () { $(".textobj").text("Text changed!"); });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <br>
+  <div class="container">
+
+    <div class="box">
+      <button class="hidebtn">hide</button>
+      <p class="hideobj">hide object</p>
+    </div>
+
+    <div class="box">
+      <button class="showbtn">show</button>
+      <p class="showobj">show object</p>
+    </div>
+
+    <div class="box">
+      <button class="togglebtn">toggle</button>
+      <p class="toggleobj">toggle object</p>
+    </div>
+
+    <div class="box">
+      <button class="slidedownbtn">slidedown</button>
+      <p class="slidedownobj">slidedown object</p>
+    </div>
+
+    <div class="box">
+      <button class="slideupbtn">slideup</button>
+      <p class="slideupobj">slideup object</p>
+    </div>
+
+    <div class="box">
+      <button class="slidetogglebtn">slidetoggle</button>
+      <p class="slidetoggleobj">slidetoggle object</p>
+    </div>
+
+    <div class="box">
+      <button class="fadeinbtn">fadein</button>
+      <p class="fadeinobj">fadein object</p>
+    </div>
+
+    <div class="box">
+      <button class="fadeoutbtn">fadeout</button>
+      <p class="fadeoutobj">fadeout object</p>
+    </div>
+
+    <div class="box">
+      <button class="addclassbtn">addclass</button>
+      <p class="addclassobj">addclass object</p>
+    </div>
+
+    <div class="box">
+      <button class="beforebtn">before</button>
+      <p class="beforeobj">before object</p>
+    </div>
+
+    <div class="box">
+      <button class="afterbtn">after</button>
+      <p class="afterobj">after object</p>
+    </div>
+
+    <div class="box">
+      <button class="appendbtn">append</button>
+      <p class="appendobj">append object</p>
+    </div>
+
+    <div class="box">
+      <button class="htmlbtn">html</button>
+      <p class="htmlobj">html object</p>
+    </div>
+
+    <div class="box">
+      <button class="attrbtn">attr</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="img/1.jpg" alt="50x50" width="50px" height="50px">
+    </div>
+
+    <div class="box">
+      <button class="valbtn">val</button>
+      <input class="valobj" type="text">
+    </div>
+
+    <div class="box">
+      <button class="textbtn">text</button>
+      <p class="textobj">text object</p>
+    </div>
+
+    <br>
+    <br>
+
+  </div>
+
+</body>
+
+</html>
