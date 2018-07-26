@@ -6,10 +6,18 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- $('p') $('#mybtn') $('.mybtn')   $('div p')=(div&p)   $('div,p')=(div|p)   <p class="mycol myft"></p>  -->
+    <!-- $('p,#mybtn,.mybtn')  $('div p')=(div&p)  $('p,button')=(p|button)  <p class="mycol myft"></p> -->
 
     <script>
         $(document).ready(function () {
+
+            $('p').click(function () {
+                $(this).css('background-color', 'pink');
+            });
+
+            $('body').on('click', 'button', function () {
+                $(this).css('background-color', 'pink');
+            });
 
         });
     </script>
@@ -18,11 +26,11 @@
 
 <body>
 
-    <h1>Hello</h1>
+    <p>Hello</p>
+
+    <button>Click me</button>
 
     <script>
-
-      
 
 
     </script>

@@ -11,57 +11,67 @@
 
         $(document).ready(function () {
 
-            var clickOnce = 0;
+            var clicked = false;
 
-            $('button').hover(function () {
-                backgroundImg = $(this).val();
-                $('.container').css("background-image", "url(img/" + backgroundImg + ".jpg)");
-            }, function () {
-                if (clickOnce == 0) {
-                    $('.container').css("background-image", "");
+            //  button hover
+            $('button').hover(
+                function () {
+                    backgroundImg = $(this).val();
+                    $('.container').css("background-image", "url(img/" + backgroundImg + ")");
+                },
+                function () {
+                    if (clicked == false) {
+                        $('.container').css("background-image", "");
+                    }
                 }
-            })
+            );
 
-            //Click button
+            // button clicked
             $('button').click(function () {
-                clickOnce = 1;
+                clicked = true;
                 $('button').hide();
-                $('.menu').html("<h1 class='h1player'>Select Player</h1><select id='list1'>" +
+                newhtml =
+                    "<h1>Select Player</h1>" +
+                    "<select id='list1'>" +
                     "<option value=''></option>" +
                     "<option value='donny.png'>Donny</option>" +
                     "<option value='leo.png'>Leo</option>" +
                     "<option value='mikey.png'>Mikey</option>" +
                     "<option value='raphael.png'>Raphael</option>" +
-                    "</select>" + "<select id='list2'>" +
+                    "</select>" +
+                    "<select id='list2'>" +
                     "<option value=''></option>" +
                     "<option value='donny.png'>Donny</option>" +
                     "<option value='leo.png'>Leo</option>" +
                     "<option value='mikey.png'>Mikey</option>" +
                     "<option value='raphael.png'>Raphael</option>" +
-                    "</select>")
+                    "</select>";
+                $('.panel').html(newhtml);
             });
 
-            //Select Player 1       
-            $('.menu').on('change', '#list1', function () {
+            // player1 selected       
+            $('.panel').on('change', '#list1', function () {
                 var valSelected = $(this).val();
                 if (valSelected == '') {
-                    $('.player1').html("");
+                    $('.player1').html('');
                 }
                 else {
-                    $('.player1').html("<img src=img/" + valSelected + " alt='#'>");
+                    var newhtml = '<img src=img/' + valSelected + ' alt="#">';
+                    $('.player1').html(newhtml);
                     $('img').css('width', '100px');
                     $('img').css('height', '100px');
                 }
             });
 
-            //Select Player2                
-            $('.menu').on('change', '#list2', function () {
+            // player2 selected
+            $('.panel').on('change', '#list2', function () {
                 var valSelected = $(this).val();
                 if (valSelected == '') {
-                    $('.player2').html("");
+                    $('.player2').html('');
                 }
                 else {
-                    $('.player2').html("<img src=img/" + valSelected + " alt='#'>");
+                    var newhtml = '<img src=img/' + valSelected + ' alt="#">';
+                    $('.player2').html(newhtml);
                     $('img').css('width', '100px');
                     $('img').css('height', '100px');
                 }
@@ -73,86 +83,78 @@
 
     <style>
         * {
-            padding: 0;
             margin: 0;
+            padding: 0;
+            vertical-align: top;
         }
 
         .container {
-            margin: 0 auto;
             background-color: black;
             border: 10px solid grey;
             width: 1000px;
             height: 600px;
+            margin: 0 auto;
         }
 
-        .menu {
+        .panel {
             background: darkgrey;
-            height: 150px;
             width: 300px;
+            height: 150px;
             margin-top: 200px;
             margin-left: 300px;
             padding: 20px;
         }
 
-        .menu button {
+        .panel button {
             width: 120px;
             height: 30px;
-            margin-left: 20px;
             margin-top: 5px;
+            margin-left: 20px;
         }
 
-        .menu h1 {
+        .panel h1 {
             text-align: center;
-        }
-
-        .h1player {
-            color: red;
         }
 
         #list1,
         #list2 {
-            margin-left: 20px;
-            margin-top: 20px;
             width: 120px;
+            margin-top: 20px;
+            margin-left: 20px;
         }
 
         .player1,
-        .player2 
-        {
+        .player2 {
+            /* background-color: green; */
             width: 200px;
             height: 100px;
-            margin-left: 130px;
             margin-top: 50px;
-            padding-left: 50px;            
+            margin-left: 130px;
+            padding-left: 50px;
             display: inline-block;
-            vertical-align: top;
-            
         }
 
-        .player1
-        {
+        .player1 {
             margin-left: 130px;
         }
 
         .player2 {
             margin-left: 230px;
-           
         }
-
     </style>
 
 </head>
 
 <body>
     <div class="container">
-        <div class="menu">
+        <div class="panel">
             <h1>Select Arena</h1>
-            <button value="beach">Beach</button>
-            <button value="earth">Planet</button>
-            <button value="dojo">Dojo</button>
-            <button value="forest">Forest</button>
-            <button value="matrix">Matrix</button>
-            <button value="snow">Snow</button>
+            <button value="beach.jpg">Beach</button>
+            <button value="earth.jpg">Planet</button>
+            <button value="dojo.jpg">Dojo</button>
+            <button value="forest.jpg">Forest</button>
+            <button value="matrix.jpg">Matrix</button>
+            <button value="snow.jpg">Snow</button>
         </div>
         <div class="player1"></div>
         <div class="player2"></div>
