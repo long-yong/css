@@ -8,13 +8,21 @@
 
     <!-- $('p,#mybtn,.mybtn')  $('div p')=(div&p)  $('p,button')=(p|button)  <p class='mycol myft'></p> -->
     <!-- $('body').on('click', 'button', function () { $(this).css('background-color', 'pink'); }); -->
-    
+
     <script>
+
+        function callback_alert() {
+            $('.newOne').click(function () {
+                alert("I am clicked!");  // call mutiple error
+            });
+        };
+
         $(document).ready(function () {
 
-            $('button').click(function () {
-                $(this).css('background-color', 'pink');
-            });           
+            $('#button1').click(function () {
+                $('#buttons').append("<button class='newOne'>Click me</button>");
+                callback_alert();
+            });
 
         });
     </script>
@@ -25,12 +33,12 @@
 
     <p>Hello</p>
 
-    <button>Click me</button>
+    <button id='button1'>Create Buttons</button>
 
-    <script>
+    <br>
+    <br>
 
-
-    </script>
+    <div id='buttons'></div>
 
 </body>
 
