@@ -53,10 +53,10 @@
             $('.panel').on('change', '#list1', function () {
                 var valSelected = $(this).val();
                 if (valSelected == '') {
-                    $('.player1').html('');
+                    $('.player1').html("");
                 }
                 else {
-                    var newhtml = '<img src=img/' + valSelected + ' alt="#">';
+                    var newhtml = "<img src=img/" + valSelected + " alt='#'>";
                     $('.player1').html(newhtml);
                     $('img').css('width', '100px');
                     $('img').css('height', '100px');
@@ -67,10 +67,10 @@
             $('.panel').on('change', '#list2', function () {
                 var valSelected = $(this).val();
                 if (valSelected == '') {
-                    $('.player2').html('');
+                    $('.player2').html("");
                 }
                 else {
-                    var newhtml = '<img src=img/' + valSelected + ' alt="#">';
+                    var newhtml = "<img src=img/" + valSelected + " alt='#'>";
                     $('.player2').html(newhtml);
                     $('img').css('width', '100px');
                     $('img').css('height', '100px');
@@ -125,7 +125,6 @@
 
         .player1,
         .player2 {
-            /* background-color: green; */
             width: 200px;
             height: 100px;
             margin-top: 50px;
