@@ -8,30 +8,28 @@
 
     <!-- $('p,#mybtn,.mybtn')  $('div p')=(div&p)  $('p,button')=(p|button)  <p class='mycol myft'></p> -->
     <!-- $('body').on('click', 'button', function () { $(this).css('background-color', 'pink'); }); -->
-    
+
     <script>
         $(document).ready(function () {
 
-            $('button').click(function () {
-                $(this).css('background-color', 'pink');
-            });           
-
+            $('form').submit(function () {
+                alert($(this).serialize());
+                return false;  // greturn true will go to process.php
+            });
         });
     </script>
 </head>
 
 
 <body>
-
-    <p>Hello</p>
-
-    <button>Click me</button>
-
-    <script>
-
-
-    </script>
-
+    <br>
+    <form action='process.php' method='post'>
+        First Name <input type='text' name='first_name'>
+        <br>
+        Last nmae <input type='text' name='last_name'>
+        <br>
+        <input type='submit' valuse='submit'>
+    </form>
 </body>
 
 </html>

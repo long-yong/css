@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tmp</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- $('p,#mybtn,.mybtn')  $('div p')=(div&p)  $('p,button')=(p|button)  <p class='mycol myft'></p> -->
+    <!-- $('body').on('click', 'button', function () { $(this).css('background-color', 'pink'); }); -->
+
+    <script>
+        $(document).ready(function () {
+
+            $('.container').click(function(){
+                alert('You click container')
+            })
+
+        });
+    </script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            vertical-align: top;
+        }
+
+        .container {
+            width: 750px;
+            margin: auto;
+            padding: 30px;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+
+        .bigbox {
+            background-color: lightblue;
+            width: 600px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .smlbox {
+            background-color: blue;
+            width: 150px;
+            height: 100px;
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>Color Clicker</h1>
+        <br>
+
+        <div class="bigbox">
+            <div class="smlbox"></div>
+            <div class="smlbox"></div>
+            <div class="smlbox"></div>
+        </div>
+        <br>
+
+        <h2>Rules</h2>
+        <h3>1. Clicking the big box should change background colors of both the small and large boxes!</h3>
+        <h3>2. Clicking the middle small box should change the color of the big box!</h3>
+        <h3>3. Clicking the left or right small box should change the color of that box's siblings</h3>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+</html>
